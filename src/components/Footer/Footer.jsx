@@ -1,14 +1,8 @@
-import {
-    FaFacebook,
-    FaGoogle,
-    FaInstagram,
-    FaPhone,
-    FaTelegram,
-} from "react-icons/fa";
-
+import { FaInstagram, FaWhatsapp, FaLinkedin, FaGithub, FaPhone } from "react-icons/fa";
 import { FaMapLocation } from "react-icons/fa6";
 import CreditCards from "../../assets/Credit Cards.webp";
 import { motion } from "motion/react";
+import { Link } from "react-scroll";
 
 const Footer = () => {
   return (
@@ -70,25 +64,17 @@ const Footer = () => {
                         <h1 className="text-3xl font-bold ">
                             Quick Links
                         </h1>
-                        <div className="grid sm:grid-cols-2 gap-3">
+                        <div className="grid sm:grid-cols-2 gap-3 text-center">
                             {/* First Section */}
                             <div>
                                 <ul className="space-y-2">
-                                    <li>Home</li>
-                                    <li>About</li>
-                                    <li>Contact</li>
-                                    <li>Privacy Policy</li>
+                                    <Link to="home" smooth={true} duration={400}><li className="pb-2 cursor-pointer">Home</li></Link>
+                                    <Link to="product" smooth={true} duration={400}><li className="pb-2 cursor-pointer">Product</li></Link>
+                                    <Link to="contact-us" smooth={true} duration={400}><li className="pb-2 cursor-pointer">Contact</li></Link>
+                                    <Link to="about-us" smooth={true} duration={400}><li className="pb-2 cursor-pointer">About Us</li></Link>
                                 </ul>
                             </div>
                             {/* Second Sectiom */}
-                            <div>
-                                <ul className="space-y-2">
-                                    <li>Home</li>
-                                    <li>About</li>
-                                    <li>Contact</li>
-                                    <li>Privacy Policy</li>
-                                </ul>
-                            </div>
                         </div>
                     </motion.div>
                     {/* Social Links Section */}
@@ -112,10 +98,15 @@ const Footer = () => {
                         className="space-y-6">
                         <h1 className="text-3xl font-bold">Follow Us</h1>
                         <div className="flex items-center gap-3">
-                            <FaFacebook className="text-3xl hover:scale-105 duration-300"/>
-                            <FaInstagram className="text-3xl hover:scale-105 duration-300"/>
-                            <FaTelegram className="text-3xl hover:scale-105 duration-300"/>
-                            <FaGoogle className="text-3xl hover:scale-105 duration-300"/>
+
+                            <a href="https://api.whatsapp.com/send/?phone=%2B917977101454&text&type=phone_number&app_absent=0" target="_blank"><FaWhatsapp className="text-3xl hover:scale-105 duration-300"/></a>
+
+                            <a href="https://www.instagram.com/_.13vanshmehta._/" target="_blank"><FaInstagram className="text-3xl hover:scale-105 duration-300"/></a>
+
+                            <a href="https://www.linkedin.com/in/vansh-mehta-vsm13/" target="_blank"><FaLinkedin className="text-3xl hover:scale-105 duration-300"/></a>
+
+                            <a href="https://github.com/13vanshmehta" target="_blank"><FaGithub className="text-3xl hover:scale-105 duration-300"/></a>
+
                         </div>
                         <div>
                             <h1 className="text-xl font-semibold mb-2">Payment Methods</h1>
