@@ -36,7 +36,7 @@ const ContactUs = () => {
 
     setTimeout(() => {
       setNotification({ ...notification, visible: false });
-    }, 3000);
+    }, 1500);
   };
 
   return (
