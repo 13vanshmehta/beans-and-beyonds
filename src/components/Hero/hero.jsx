@@ -30,7 +30,7 @@ const Hero = () => {
                         {/* NAVBAR SECTION */}
                         <Navbar sidebar = {SideBar} setsidebar ={setSideBar} />
                         {/* HERO SECTION */}
-                        <div className="grid md: lg: grid-cols-3 place-items-center min-h-[850px]">
+                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 place-items-center min-h-[850px]">
                             {/* TEXT CONTENT SECTION LEFT*/}
                             <div className="text-[#f1dabf] md: mt-0 p-4 space-y-28 pr-[10rem]">
                                 <motion.h1 
